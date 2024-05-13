@@ -33,15 +33,13 @@ function Header() {
   return (
     <Box textAlign="center" mb={12}>
       <Heading as="h1" fontSize="3xl" fontWeight="bold" mb={4}>
-        Let's start your careers here!
+        Looking for an Opportunity at the Hospitality industry!
       </Heading>
       <Heading as="h2" fontSize="2xl" mb={6}>
-        Looking for a career change? Browse our job listings now!
+        Get in Touch With us and Browse our job listings now!
       </Heading>
       <Text mb={4}>
-        Max velitius dignissim quis ut lorem. Etiam eros pulvinar odio dapibus,
-        sagittis quisque orci pretium donec sit. Aliquam porta integer maecenas
-        risus lobortis.
+        "Rapid Relief Hospitality offers swift employment solutions, connecting job seekers with immediate opportunities in the hospitality industry. With streamlined processes and a wide network of employers, we expedite the job search, helping individuals secure positions quickly and efficiently."
       </Text>
       <Link to="/careers">
         <Button bg="green.500" color="white" px={6} py={2} rounded="lg" _hover={{ bg: 'green.600' }} transition="all 0.3s">
@@ -60,20 +58,20 @@ function MainContent() {
         <Image src={JobImage} alt="Professional" rounded="full" boxShadow="lg" />
       </Box>
       <Flex flex={1} flexDirection="column" gap={6}>
-        <InfoBox title="Talents Agency" />
-        <InfoBox title="Portal Job" />
-        <InfoBox title="Careers Coaching" />
+        <InfoBox title="Talents Agency" text= 'Rapid response, reliable results: Our emergency staffing solutions keep your operations running smoothly, even in the most critical situations.'/>
+        <InfoBox title="Portal Job" text= 'From urgent care to critical care, we provide the right staff at the right time, ensuring seamless continuity of care for your patients.' />
+        <InfoBox title="Careers Coaching" text= 'When every minute counts, trust our emergency staffing solutions to deliver qualified professionals who are ready to step in and make a difference.' />
       </Flex>
     </Flex>
   );
 }
 
 // InfoBox component
-function InfoBox({ title }) {
+function InfoBox({ title,text }) {
   return (
-    <Box bg="green.100" p={4} rounded="lg" boxShadow="md">
+    <Box bg="blue.100" p={4} rounded="lg" boxShadow="md">
       <Heading as="h3" fontSize="lg" fontWeight="semibold">{title}</Heading>
-      <Text>Facilisi etiam consectetur mi nibh. Ipsum posuere venenatis cubilia donec potenti si.</Text>
+      <Text color="black">{text}</Text>
     </Box>
   );
 }
@@ -85,13 +83,8 @@ function ExperienceSection() {
       <Heading as="h2" fontSize="2xl" fontWeight="bold" mb={4}>
         15+ Years of Experience
       </Heading>
-      <Text mb={6}>
-        Our Service: Bridge for industrial and corporate development.
-      </Text>
       <Text mb={8}>
-        Donec eros lacus velit nec facilisi lorem sit et dictum suspendisse.
-        Maximus ligula eget risus sagittis, nec feugiat eros fringilla magnis
-        montes viverra erat commodo pulvinar.
+      Founded in response to a growing need for rapid employment solutions, Rapid Relief Hospitality emerged as a beacon of hope for job seekers in the hospitality sector. Established by industry veterans with a passion for empowering individuals, the company swiftly gained traction, leveraging its extensive network to match eager candidates with urgent job openings. With a commitment to efficiency and excellence, Rapid Relief Hospitality continues to revolutionize the hiring process, providing swift relief to both employers and employees alike.
       </Text>
     </Box>
   );
